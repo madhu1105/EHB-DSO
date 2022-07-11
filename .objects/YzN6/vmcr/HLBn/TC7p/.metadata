@@ -1,0 +1,16 @@
+﻿{
+  "Id": "TC7pVD6JNUGNVfSKNBj0Hg",
+  "Reference": "2RcyyFTrO0mikJwv_HPYhQ/TC7pVD6JNUGNVfSKNBj0Hg",
+  "ParentRef": "2RcyyFTrO0mikJwv_HPYhQ/HLBnAV8SO0ebcS7M0vTvuA",
+  "Name": "star Cover Page",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Created": "2022-06-16T16:25:50.1261133Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-06-16T17:06:44.625025Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

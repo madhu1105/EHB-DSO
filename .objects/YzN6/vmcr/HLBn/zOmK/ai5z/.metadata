@@ -1,0 +1,14 @@
+﻿{
+  "Id": "ai5zpvz5sk-ee5idTWmfug",
+  "Reference": "2RcyyFTrO0mikJwv_HPYhQ/ai5zpvz5sk-ee5idTWmfug",
+  "ParentRef": "2RcyyFTrO0mikJwv_HPYhQ/zOmKx749bUyOVWii0m_hFQ",
+  "Name": "For Each UI Element",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2022-06-16T16:26:23.6495887Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.4.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-06-16T16:26:23.6495887Z"
+}

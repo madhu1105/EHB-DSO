@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="loopforhomepage" sap:VirtualizedContainerService.HintSize="908.8,2331.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="loopforhomepage" sap:VirtualizedContainerService.HintSize="836.8,3485.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System.Activities</x:String>
@@ -32,6 +32,7 @@
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -70,16 +71,15 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use home page" sap:VirtualizedContainerService.HintSize="513.6,2266.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="daa261e7-33dc-4a7c-8726-8f5172e7e3c1" Version="V1">
+  <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use home page" sap:VirtualizedContainerService.HintSize="615.2,3420.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="daa261e7-33dc-4a7c-8726-8f5172e7e3c1" Version="V1">
     <uix:NApplicationCard.Body>
       <ActivityAction x:TypeArguments="x:Object">
         <ActivityAction.Argument>
           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
         </ActivityAction.Argument>
-        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="480,2049.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="581.6,3204" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Int32" Default="2" Name="tablenumber" />
           </Sequence.Variables>
@@ -88,13 +88,13 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='tracking_number'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='col1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='col2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;webctrl tag='section' idx='1' /&gt;&lt;webctrl tag='mat-select' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="438.4,1955.2" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="daa261e7-33dc-4a7c-8726-8f5172e7e3c1" Version="V1">
+          <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='tracking_number'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='col1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='col2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;webctrl tag='section' idx='1' /&gt;&lt;webctrl tag='mat-select' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="540,3109.6" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="daa261e7-33dc-4a7c-8726-8f5172e7e3c1" Version="V1">
             <uix:NForEachUiElement.Body>
               <ActivityAction x:TypeArguments="x:Int32">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,1688" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476.8,2842.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="urlstring" />
                   </Sequence.Variables>
@@ -103,7 +103,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NGetAttribute Attribute="href" DisplayName="Get Attribute 'correct attachment'" sap:VirtualizedContainerService.HintSize="333.6,208" sap2010:WorkflowViewState.IdRef="NGetAttribute_1" ScopeIdentifier="daa261e7-33dc-4a7c-8726-8f5172e7e3c1" Version="V1">
+                  <uix:NGetAttribute Attribute="href" DisplayName="Get Attribute 'correct attachment'" sap:VirtualizedContainerService.HintSize="435.2,208" sap2010:WorkflowViewState.IdRef="NGetAttribute_1" ScopeIdentifier="daa261e7-33dc-4a7c-8726-8f5172e7e3c1" Version="V1">
                     <uix:NGetAttribute.Result>
                       <OutArgument x:TypeArguments="x:String">[urlstring]</OutArgument>
                     </uix:NGetAttribute.Result>
@@ -111,46 +111,91 @@
                       <uix:TargetAnchorable BrowserURL="https://orange-forest-022dbf80f.1.azurestaticapps.net/" DesignTimeRectangle="981, 542, 149, 25" ElementType="Text" FriendlyName="'correct attachment'" FullSelectorArgument="[String.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='{0}' tag='A' /&gt;&quot;, tablenumber)]" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='ng-star-inserted' aaname=' correct attachment ' check:innerText='correct attachment' /&gt;" Guid="3f1af0e1-529e-4802-82ed-698a47466e2c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJkAAAAdCAYAAAC5fc50AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAXSSURBVHhe7VnNS1tLFO/f0b8i6y4L3bmsUMIDhRIXCqKLunHxECHy2kJIFjcQVFCUGiREfBKCJEjJC1YevUgtipZYWrQQaFHhQiUuzjtnPnLn3twbJ325YmF+MJiZO3PmfPzm6/ig0WiAKaZEWR6AgUHEMCQziByGZAaRw5DMIHIYkhlEDkMyg8hhSGYQOQzJ7ive52Hw4SuYfy/qvzEMye4rDMnuOfoaoCaUR17B4EgFfyn4VoFpnGO66GntH347koX4CWFIdisMyfTQE8ku4bS4ChOPcQAaGX9sQXLtEBzxVcL5VIPsZAri2If6JSYLYDdvxFfCB5inb6ldOF7IwXCMfn9wnVc9hDejfLzrSN/cA4uwvPddfJPoop8IPLW7JQ8HbFwQbqBZ34LkkLAjloKJ2QqcCmMPUn5ZRKo6t8tTclD+xsfcJrONmybY1iIkHnEZZGu2+kV8REg/of1qv+FR9PMP0UcJ7MFeAWYGhCz0SbpEshwNf5K+vrHFhhJvGUcbLjxz5Nqygv3kUs1HMgcHZLBTBl6v7YJdt6G2tgQJHJRAgsiJW/sF1hYfKUAV+9jVCmSHUHgMnf1VdJLKIblIobRVgPltNFw4L47tw6OrMI/ttc/UX8wdsyBb5HNXMxYLVHJbOuY2/a7BuboEp7rK5khX8feVP7oumsUckz9l1Zgsu1SAKdJ3fIevRofGn0DhOdrxvAynJPv6Blr096gMUzR25YTN0WISNWQynEN5nHxjwXwJ+yi2ThfPeRfhp8RABsb+LEONbC3mmSx3txAkI/lPl2CzqsTiYQqmhjIQH8pD2dOuLgipbwZmFri+bX/mTkQPEUfSo2MOISvQT3w0wUuyz2WYYIZ6N7yL0qKi3BfY/AOF+bdFB5Uhlk/W4II1SOVwJ1HjLJ2nkJbQwvZhdEx2T2114N0syniyAcdU1dIPIXeBrkcNOgWDMJY7FHUOLisDBUZ8Qi/HpZ7MVn0VA5tC/ZRIII6tFBJG7LwhfjpboUWGtrJphW5P8mB73LYLr3FsRzv6b4x0/lssWmnDuiC2wNmKhXMsQu2KaiFx9MsK8xPCQzJugBSu4PocDpDlp7RNC+HJ7Uv+TYF3vFCOjkgVIQRgW64kkwJn2yWQln4ELZKFoGNsLyQLgUfmtXfhqPjRwN3kEJrEvTAb9qhdLqiwwArfv7RFXYK3S51pFwv058cNXPBy7pA4gg1ZRZY2yfjZ2u0Og+gWQPYtBcsfqdILyYSC1D+wcKdq6UfopqMHeL8r5WHmqXu3lMUd2yvJbpMZHgwPwmxg7Zok6yCGl2RBdym18Ln1ZN0dydgq+x8ke5bnd7yOwld3f0mGR/EcymP3ohM4o3uEcp9zx/ZCMh2Z941ki1AI9Lk8GfpMsuY6ncWr8M57VUDwC3WLHo+RHJddjhAFWvoRdEjW3AneiTrG9kAyTZn2S5T3rAxnvOrixkE7xCMizAbW3h+SyXhV26/VIPSZZHC0xV4WMyXvM9d5SxdVCzbZxbXHi78WyXB4dYkdL0nf3OAcgr0vCK2lHyIsQCoESaZ8l97mOt1TfpFkmjK5rXLHd8Eu3DGxiO6AZNKfCcv7UKHXr12X6RRNWaG6+EmG231QimAMn8i/nMLQJFn7Wa88p+3SFsvLxMcrcMZ2KT395Cs0MbeDfcRFugNiscQykKT50IblF/jkJ509+uEuy47AHLyh5/snQfjrfyHNUhMbLL3AjxZdmQEpDIunPvwpjEhJ1vYnLoy5CrOjHUt8TdrdTqQOWSF+QvhIRuhMdqaLJ24ABfSTsbokI3wHe2HJm2hdsMEjVks/x00Ax/A48C8tCacB5Vmen2onTY8qPP+l7kZfa5Am8tB8yqpvbqMeIkm6vC8adWUGJGOX64qid0IygsMfKiLJOvgoBTOpGpy2X5w9yArxUwDJDAz6izbJ1v76hzPZFFP6VH46/P8gZicziByGZAaRw5DMIHIYkhlEDkMyg4gB8B/GUXAPo8USogAAAABJRU5ErkJggg==" InformativeScreenshot="9425b775e00490128089a5cd87a186a9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='File Storage' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
                     </uix:NGetAttribute.Target>
                   </uix:NGetAttribute>
-                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="333.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;https://orange-forest-022dbf80f.1.azurestaticapps.net/&quot; + urlstring]" />
-                  <uix:NClick ClickType="Single" DisplayName="Click 'correct attachment'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="daa261e7-33dc-4a7c-8726-8f5172e7e3c1" Version="V1">
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="435.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;https://orange-forest-022dbf80f.1.azurestaticapps.net/&quot; + urlstring]" />
+                  <uix:NClick ClickType="Single" DisplayName="Click 'correct attachment'" sap:VirtualizedContainerService.HintSize="435.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="daa261e7-33dc-4a7c-8726-8f5172e7e3c1" Version="V1">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://orange-forest-022dbf80f.1.azurestaticapps.net/" DesignTimeRectangle="981, 542, 149, 25" ElementType="Text" FriendlyName="'correct attachment'" FullSelectorArgument="[String.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='{0}' tag='A' /&gt;&quot;, tablenumber)]" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='ng-star-inserted' aaname=' correct attachment ' check:innerText='correct attachment' /&gt;" Guid="db38d08c-777a-4f38-989a-999dbe8ba88c" ImageBase64="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" InformativeScreenshot="ca4bb081d508fe492dd76c5e14134024.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='File Storage' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke CheckCoverPage workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="CheckCoverPage.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke CheckCoverPage workflow" sap:VirtualizedContainerService.HintSize="435.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="CheckCoverPage.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="in_urlstring">[urlstring]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="budgetnarrative.xaml">
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="435.2,193.6" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="241.6,115.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                  </ui:CommentOut>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="435.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="checkbudgetnarrative.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="in_urlstring">[urlstring]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="keycontacts.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="435.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="checkkeycontacts.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="in_urlstring">[urlstring]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="projectabstract.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="435.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="checkprojectabstract.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="in_urlstring">[urlstring]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="projectperformance.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="435.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="checkprojectperformance.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="in_urlstring">[urlstring]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="docsunkown.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="435.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="checkdocsunkown.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_urlstring">
-                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="urlstring" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_urlstring">[urlstring]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <Assign sap:VirtualizedContainerService.HintSize="333.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="435.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="zipfiledownload.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_urlstring">[urlstring]</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke sortingthefiles workflow" sap:VirtualizedContainerService.HintSize="435.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="sortingthefiles.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke uploadinhomepage workflow" sap:VirtualizedContainerService.HintSize="435.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="uploadinhomepage.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_urlstring">[urlstring]</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="435.2,284.8" sap2010:WorkflowViewState.IdRef="CommentOut_13">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="375.2,206.4" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke uploadinhomepage workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="uploadinhomepage.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_urlstring">[urlstring]</InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                  </ui:CommentOut>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'Home'" sap:VirtualizedContainerService.HintSize="435.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="daa261e7-33dc-4a7c-8726-8f5172e7e3c1" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://orange-forest-022dbf80f.1.azurestaticapps.net/home?id=10002" DesignTimeRectangle="1544, 122, 67, 30" ElementType="Text" FriendlyName="'Home'" FullSelectorArgument="&lt;webctrl parentid='home435' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='home435' tag='SPAN' type='' class='' aaname='Home' check:innerText='Home' /&gt;" Guid="ae52d2a8-cf62-4589-b5c4-3a5ad0ce487e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAiCAYAAAANicT2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALJSURBVGhD7ZfdhxtRGIf7d+Q25KK9Wrosja6qVqjRak2a2Uk2sv3YkbG72Q9ZamMje1kiLCGEJURZyiq5CCuEvVxKKEuoZf+QX8/IfJwzc+ZsEzO0nIvnZt73PTnznDcnbx6cHNxBwkfKESDlCJByBEg5AqQcAVKOAClHgJQjgJVT6kFNfJ2RGTOJAejclQvUeDn/OVKOAClHgJQjQMoREKucRnkEc/UUWsrOSzahp8+wVZgEci0OM3Zeoo1KeYqjtXNsLDeRtT8nt9yFWfw1y9+boKp0kX9Ir91H1bwNrOti8vbTw+7HG25+THKm+PK2474UD+3ZICDUk9NC8UmLyfdowVgbwljixQhJItZg17WoaV1ovHybdeUKdV9NuJx58Mmp5888MckWNpQBqoUR9tUe1p1TI2jkAOgNeXJm6E/PsUvqqu9JB3FkOPF9tc/Esy8u0aDWrZP3csWk2thUh5z9NGGUfrs1FjHIuUL5kRM7hfnZ1+aVETap+DZ1yrSc4rufvrpLfEp68fybaza+NUDJjqnJPg7d2DW2HzvPOV1lXKDo1K0OmMMKl0NOxbIbyuuOl0vL+fANOef5c/YEHWpq263VqZek5Rglf90ElRUnbt1J/vgYhl2rJnqeHOM7dPt5lntV0Ov2UKVikd85x1nvxYsq/+JlBFKfE4ecBvmKO2veD7tu5HLorgiVU6ZamaqNQw69n/uJWc7cnfNy5D6PQw69H00hPwA7NwKmzDUQuZx/7s6h95Me4JipERO9nIh+rSKTw+zH6mbfr6DFDhkOldEcc87Cckgra9QAuOCcE50c39xFcOenwhCVVx3o9oigkU6nOysWOX8zIWfTP3w18ck5ObjFkSrej5rqBGagmOTMqBvDBf9bRS3HxhyjkiGd4vwfI+SWOmRiHqO2F8xn5UgYpBwBUo4AKUeAlCNAyhEg5YRyhz9jG2OrqumtHgAAAABJRU5ErkJggg==" InformativeScreenshot="01e3ac45744a8980a9b15e44dfe528a1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='File Storage' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <Assign sap:VirtualizedContainerService.HintSize="435.2,61.6" sap2010:WorkflowViewState.IdRef="Assign_1">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[tablenumber]</OutArgument>
                     </Assign.To>
@@ -161,15 +206,6 @@
                 </Sequence>
               </ActivityAction>
             </uix:NForEachUiElement.Body>
-            <uix:NForEachUiElement.Filter>
-              <uuam:FilterArgument LogicalOperator="And">
-                <uuam:FilterArgument.Filters>
-                  <scg:List x:TypeArguments="uuam:FilterEntryArgument" Capacity="4">
-                    <uuam:FilterEntryArgument Criterion="Column0" Operator="DoesNotContain" Value="10000" />
-                  </scg:List>
-                </uuam:FilterArgument.Filters>
-              </uuam:FilterArgument>
-            </uix:NForEachUiElement.Filter>
             <uix:NForEachUiElement.Target>
               <uix:TargetAnchorable BrowserURL="https://orange-forest-022dbf80f.1.azurestaticapps.net/" DesignTimeRectangle="445, 540, 1049, 85" FriendlyName="'10000 Finished'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="8b424b17-bee4-4525-8bb5-b24a87b73b39" InformativeScreenshot="cbebef8d5a0311afc0ae1bd081d44cc1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='File Storage' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
             </uix:NForEachUiElement.Target>
@@ -178,10 +214,10 @@
               <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
               <Variable x:TypeArguments="x:String" Name="status" />
               <Variable x:TypeArguments="x:String" Name="options" />
-              <Variable x:TypeArguments="x:String" Name="col1" />
-              <Variable x:TypeArguments="x:String" Name="col2" />
               <Variable x:TypeArguments="ui:UiElement" Name="tracking_number" />
               <Variable x:TypeArguments="x:String" Name="tracking_number_Label" />
+              <Variable x:TypeArguments="x:String" Name="col1" />
+              <Variable x:TypeArguments="x:String" Name="col2" />
             </uix:NForEachUiElement.Variables>
             <uix:NForEachUiElement.VariablesMetadata>
               <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
@@ -195,6 +231,12 @@
                 <uuam:VariableMetadata Name="col2" Type="x:String" />
               </scg:List>
             </uix:NForEachUiElement.VariablesMetadata>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
           </uix:NForEachUiElement>
         </Sequence>
       </ActivityAction>
@@ -205,6 +247,7 @@
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
   </uix:NApplicationCard>

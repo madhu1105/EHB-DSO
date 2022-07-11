@@ -1,0 +1,13 @@
+﻿{
+  "Id": "UmFzzmTMsEeYxT3EL7aQuw",
+  "Reference": "2RcyyFTrO0mikJwv_HPYhQ/UmFzzmTMsEeYxT3EL7aQuw",
+  "ParentRef": "2RcyyFTrO0mikJwv_HPYhQ/HLBnAV8SO0ebcS7M0vTvuA",
+  "Name": "Project Abstract Summary",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Created": "2022-06-16T16:25:50.3293855Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-06-16T16:25:50.3293855Z"
+}

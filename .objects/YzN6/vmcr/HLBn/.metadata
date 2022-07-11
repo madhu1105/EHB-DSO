@@ -1,0 +1,12 @@
+﻿{
+  "Id": "HLBnAV8SO0ebcS7M0vTvuA",
+  "Reference": "2RcyyFTrO0mikJwv_HPYhQ/HLBnAV8SO0ebcS7M0vTvuA",
+  "ParentRef": "2RcyyFTrO0mikJwv_HPYhQ/vmcrkfWix0uEBkmHdLTZwQ",
+  "Name": "Chrome: File Storage",
+  "Type": "Screen",
+  "Created": "2022-06-16T16:25:50.0495813Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-06-16T16:25:50.0495813Z"
+}
